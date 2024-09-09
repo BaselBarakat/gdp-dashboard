@@ -13,7 +13,7 @@ def load_data(file):
 
 # File uploader to read CSV file
 st.title('Forecast Data Visualization')
-uploaded_file = st.file_uploader('Upload your CSV file', type='csv')
+uploaded_file = st.file_uploader('carbon', type='csv')
 
 if uploaded_file is not None:
     df = load_data(uploaded_file)
